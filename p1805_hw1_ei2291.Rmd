@@ -1,0 +1,62 @@
+---
+title: "p8105_hw1_ei2291"
+output: github_document
+name: "Eman Ibrahim"
+date: "2025-09-15"
+---
+
+#Problem 0.2. 
+Calculating Mean of the Class Exam grades
+```{r}
+exam_scores <- c(88,90,70,95)
+mean_score <- mean(exam_scores)
+print (mean_score)
+```
+
+#Problem 1
+Installing file
+```{r}
+install.packages("moderndive")
+```
+
+#loading library needed
+```{r}
+library(moderndive)
+library(tidyverse)
+```
+
+#load data set
+```{r}
+data("early_january_weather")
+```
+
+
+#Calculathe the mean temperature in early january weather
+The dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
+```{r}
+round(mean(early_january_weather$temp, na.rm=TRUE),1) 
+```
+#making a scatterplot
+```{r}
+ggplot(early_january_weather, aes(x=time_hour, y=temp, color=humid))+geom_point()+
+  labs(
+    title = "temperature vs time in early january",
+    x = "time (hour)",
+    y = "temperature in F",
+    color = "Humidity"
+  )
+```
+#in the scatterplot we can see that as the temperature goes up and down, rising during the daytime and falling at nigth. There is higher humifity sometimes during colder hours, like as we can see in the middle where temperature is aroung 30 degrees F and humidity is more than 80.
+
+#Saving scatterplot
+```{r}
+ggsave("p1805_hw1_ei2291_scatterplot.pdf")
+```
+
+
+
+
+
+
+
+
