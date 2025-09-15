@@ -53,6 +53,15 @@ ggplot(early_january_weather, aes(x=time_hour, y=temp, color=humid))+geom_point(
 ggsave("p1805_hw1_ei2291_scatterplot.pdf")
 ```
 
+#Problem 2
+Creating a dataframe for each
+```{r}
+sample = rnorm(10)
+sample_greater_than_0 = sample > 0
+character_vector = rep(c("strawberry", "pineapple", length.out = 10))
+factor_vector = factor(rep(c("A", "B","C"), length.out=10))
+```
+
 
 
 
