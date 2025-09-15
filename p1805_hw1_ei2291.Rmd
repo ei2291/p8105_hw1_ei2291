@@ -75,7 +75,13 @@ mean(pull(p2_df, factor_vector))
 ```
 #when trying to take the mean for all four variables only able to get (works) for the random sample and logical vector sample > 0; not able to get mean for the character and factor vectors
 
-
+Writing a code chunk that applies the as.numeric function to the logical, character, and factor variables.
+```{r p2_coercion, echo = TRUE, results='hide'}
+as.numeric(pull(p2_df, sample_greater_than_0))
+as.numeric(pull(p2_df, character_vector))
+as.numeric(pull(p2_df, factor_vector))
+```
+#when "as.numeric" replaced mean the veriable "greather_than_0" had two outputs with TRUE is 1 and FALSE is 0. For the "charachter_vector" it is not convertable so it is NA, and finally for the "factor_vector" A,B,C was converted to 1,2,3,respectively.
 
 
 
