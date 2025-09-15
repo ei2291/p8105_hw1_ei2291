@@ -55,11 +55,21 @@ ggsave("p1805_hw1_ei2291_scatterplot.pdf")
 
 #Problem 2
 Creating a dataframe for each
+```{r p2}
+
+p2_df=tibble(
+  sample = rnorm(10),
+  sample_greater_than_0 = sample > 0,
+  character_vector = rep(c("strawberry", "pineapple","banana"), length.out = 10),
+ factor_vector = factor(rep(c("A", "B", "C"), length.out = 10))
+)
+p2_df
+```
+
+Taking the mean of each variable in the dataframe
 ```{r}
-sample = rnorm(10)
-sample_greater_than_0 = sample > 0
-character_vector = rep(c("strawberry", "pineapple", length.out = 10))
-factor_vector = factor(rep(c("A", "B","C"), length.out=10))
+mean(pull(p2_df1, sample))
+mean(pull(p2_df))
 ```
 
 
