@@ -68,10 +68,12 @@ p2_df
 
 Taking the mean of each variable in the dataframe
 ```{r}
-mean(pull(p2_df1, sample))
-mean(pull(p2_df))
+mean(pull(p2_df, sample))
+mean(pull(p2_df, sample_greater_than_0))
+mean(pull(p2_df, character_vector))
+mean(pull(p2_df, factor_vector))
 ```
-
+#when trying to take the mean for all four variables only able to get (works) for the random sample and logical vector sample > 0; not able to get mean for the character and factor vectors
 
 
 
