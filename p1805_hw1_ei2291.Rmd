@@ -14,10 +14,8 @@ print (mean_score)
 ```
 
 #Problem 1
-Installing file
-```{r}
-install.packages("moderndive")
-```
+#Installed file using "install.packages("moderndive")" in console
+
 
 #loading library needed
 ```{r}
@@ -29,6 +27,16 @@ library(tidyverse)
 ```{r}
 data("early_january_weather")
 ```
+
+#after running "?early_january_weather" got all variables
+
+#Variables in dataset are origin, year, month, day, hour, dewp, humid, wind_dir, wind_speed, wind_gust, precip, pressure, visib, and time_hour.
+
+#The important variables are:
+time_hour = date and hour of when it was recorded
+temp = the temperature in Fahrenheit
+humid = relative humidity
+the others are additional info.
 
 
 #Calculathe the mean temperature in early january weather
