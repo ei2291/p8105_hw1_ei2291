@@ -30,7 +30,7 @@ data("early_january_weather")
 
 #after running "?early_january_weather" got all variables
 
-#Variables in dataset are origin, year, month, day, hour, dewp, humid, wind_dir, wind_speed, wind_gust, precip, pressure, visib, and time_hour.
+#Variables in dataset are origin, year, month, day, hour, temp, dewp, humid, wind_dir, wind_speed, wind_gust, precip, pressure, visib, and time_hour.
 
 #The important variables are:
 time_hour = date and hour of when it was recorded
